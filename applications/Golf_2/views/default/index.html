@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Web site</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="title" content="Web site" />
+    <meta name="description" content="Site description here" />
+    <meta name="keywords" content="keywords here" />
+    <meta name="language" content="en" />
+    <meta name="subject" content="Site subject here" />
+    <meta name="robots" content="All" />
+    <meta name="copyright" content="Your company" />
+    <meta name="abstract" content="Site description here" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <link id="theme" rel="stylesheet" type="text/css" href={{=URL(r=request, c='static', f="css/style.css")}} title="theme" />    
+    <script src="{{=URL('static','js/reserve.js')}}"></script>
+    <script src="{{=URL('static','js/datetimepicker.js')}}"></script>     
+    <script src="{{=URL('static','jquery.js')}}"></script>       
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <!--script src={{=URL(r=request, c='static', f="js/datetimepicker.js")}} type="text/javascript" /-->
+  </head>
+  <body> 
+    <div id="wrapper"> 
+      <div id="bg"> 
+        <div id="header"></div>  
+        <div id="page"> 
+          <div id="container"> 
+            <!-- banner -->  
+            <div id="banner"></div>  
+            <!-- end banner -->  
+            <!--  content -->  
+            <div id="content"> 
+              <div id="left"> 
+                <div id="sidebar"> 
+                  <ul class="vmenu">
+                    <li>
+                      <a href="#" shape="rect">Home</a>
+                    </li>
+                    {{if session.login:}}
+                        <li>
+                            Hi, {{=session.username}}
+                        </li>                            
+                        <li>
+                            <a href={{=URL('logout')}} shape="rect">Logout</a>
+                        </li>
+                    {{else:}}
+                        <li>
+                              <a href={{=URL('login')}} shape="rect">Login</a>
+                        </li>                   
+                        <li>
+                            <a href={{=URL('register')}} shape="rect">Register</a>
+                        </li>
+                    {{pass}}
+                    <li>
+                      <a href="settings.html" shape="rect">Settings</a>
+                    </li>
+                    <li>
+                      <a href="#" shape="rect">Services</a>
+                    </li>
+                    <li>
+                      <a href="#" shape="rect">News</a>
+                    </li>
+                    <li>
+                      <a href="#" shape="rect">About us</a>
+                    </li>
+                    <li>
+                      <a href="#" shape="rect">Support</a>
+                    </li>
+                    <li>
+                      <a href="#" shape="rect">Testimonials</a>
+                    </li>
+                    <li>
+                      <a href="#" shape="rect">Site map</a>
+                    </li>
+                    <li>
+                      <a href="#" shape="rect">Contact us</a>
+                    </li>
+                  </ul> 
+                </div> 
+              </div>  
+              <div id="center"> 
+                <div id="welcome"> 
+                  <h3 style="text-align:center">Book your Tee</h3><br><br>
+                  <div id="bookingForm">
+                      <form name="reservationForm" action="" method="post">
+                          <table border="0">
+                              <tr>
+                                  <td>
+                          <label for="golfer" class="formLabel">Number of Golfers:</label>
+                                  </td>
+                                  <td>
+                          <select class="fieldValue">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                          </select>
+                                  </td>
+                             </tr>
+                             <tr>
+                                 <td>
+                          <label for="date" class="formLabel">Date:</label>
+                                  </td>
+                                  <td>
+                          <input id="demo1" class="fieldValue" type="text" size="25"><a href="javascript:NewCal('demo1','ddmmyyyy')"><img src={{=URL(r=request, c='static', f="images/cal.gif")}} style="padding-left: 10px; width: 20px; height: 20px;" border="0" alt="Pick a date"></a></input>
+                                  </td>
+                             </tr>
+                             <tr>
+                                 <td>
+                          <label for="startTime" class="formLabel">Start Time(in hrs):</label>
+                                  </td>
+                                  <td>
+                          <select id="startTime" class="fieldValue" onchange="startTimeChange();">
+                              <option value="10:00">10:00</option>
+                              <option value="10:30">10:30</option>
+                              <option value="11:00">11:00</option>
+                              <option value="11:30">11:30</option>
+                              <option value="12:00">12:00</option>
+                              <option value="12:30">12:30</option>
+                              <option value="13:00">13:00</option>
+                              <option value="13:30">13:30</option>
+                          </select>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <label for="tee" class="formLabel">Number of Tees:</label>                                      
+                                  </td>
+                                  <td>
+                                      <select id="teeCounter" class="fieldValue" onchange="OnTeeChange();">
+                                          <option value=1>1</option>
+                                          <option value=2>2</option>
+                                          <option value=3>3</option>
+                                          <option value=4>4</option>
+                                          <option value=5>5</option>
+                                          <option value=6>6</option>
+                                          <option value=7>7</option>
+                                          <option value=8>8</option>
+                                      </select>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                          <label for="timePerTee" class="formLabel">Time Per Tee(in minutes):</label>
+                                  </td>
+                                  <td>
+                          <select id="timePerTeeCounter" class="fieldValue" onchange="OnTimePerTeeChange();">
+                              <option value=30>30</option>
+                              <option value=60>60</option>
+                              <option value=90>90</option>                            
+                          </select>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                          <label for="endTime" class="formLabel">EndTime:</label>
+                                  </td>
+                                  <td>
+                          <label id="endTime" class="formLabel" style="color:#EFFF98">10:30 hrs</style>
+                                  </td>
+                             </tr>
+                             <tr>
+                                    <td>  
+                          <label for="totalTime" class="formLabel">Total Time:</label>                         
+                                  </td>
+                                  <td>
+                          <label id="totalTime" class="formLabel" style="color:#EFFF98">00:30 hrs</style>
+                                  </td>
+                               </tr>
+                           </table>
+                           
+                           <br>
+                           <input class="formLabel" type="radio" name="playingMode" value=0 /> Allow others<br />
+                           <input class="formLabel" type="radio" name="playingMode" value=1 /> Do not allow others
+                      </form>
+                  </div>                  
+                  <!--p>This template is free. You are free to use it, share it, redistribute it, modify it in any way you want as long as you 
+                    <strong>keep a link back to doTemplate Website</strong> in the footer. You can remove this link by making a $10 
+                    <a href="http://www.dotemplate.com/dt/index.jsp#donate" target="_blank" shape="rect">donation</a>.
+                  </p>  
+                  <h1>Title 1</h1>  
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p -->  
+                  <div> 
+                    <!--img src={{=URL(r=request,c='static',f="images/flower-1.jpg")}} style="float:right;margin:0 0 0 15px;padding:5px;border:1px solid #444" />  
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p> 
+                  </div>  
+                  <h2>Title 2</h2>  
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>  
+                  <h3>Title 3</h3>  
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p -->  
+                  <p style="clear:both" /> 
+                </div> 
+              </div>  
+              <div style="clear:both;height:40px"></div> 
+            </div>  
+            <!-- end content --> 
+          </div>  
+          <!-- end container --> 
+        </div>  
+        <div id="footerWrapper"> 
+          <div id="footer"> 
+            <p style="padding-top:10px;"> 
+              <a href="#" shape="rect">Home</a> | 
+              <a href="#" shape="rect">Products</a> | 
+              <a href="#" shape="rect">Services</a> | 
+              <a href="#" shape="rect">News</a> | 
+              <a href="#" shape="rect">About</a> 
+            </p>  
+            <p> 
+              <!-- 
+DO NOT REMOVE OR MODIFY THE FOOTER LINK BELOW.
+If you want to remove this link please make a 10 dollars donation at www.dotemplate.com
+-->  
+              <a href="http://www.dotemplate.com" shape="rect">Templates</a> maker
+            </p> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </body>
+</html>

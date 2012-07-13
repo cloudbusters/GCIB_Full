@@ -1,0 +1,111 @@
+# -*- coding: utf-8 -*- 
+# this file is released under public domain and you can use without limitations
+
+#########################################################################
+## This is a samples controller
+## - index is the default action of any application
+## - user is required for authentication and authorization
+## - download is for downloading files uploaded in the db (does streaming)
+## - call exposes all registered services (none by default)
+#########################################################################
+
+def index():
+    """
+    example action using the internationalization operator T and flash
+    rendered by views/default/index.html or views/generic.html
+    """
+    response.flash = T('You are successfully running web2py.')
+    return dict(message=T('Hello World'))
+     
+def settings():
+    if not session.login:
+        redirect(URL('login'))
+    setting = db(db.user_settings.user_id==session.userid).select(db.user_settings.ALL)[0]
+    booking = False
+    offer = False
+    sms = False
+    news = False
+    
+    if request.vars.notifcation_booking:
+        booking = True
+    if request.vars.notifcation_offer:
+        offer = True
+    if request.vars.notifcation_sms:
+        sms = True
+    if request.vars.notifcation_news:
+        news = True
+    if request.vars:
+        redirect(URL('index'))
+    return dict(setting=setting)    
+    
+def register():
+     # create an insert form from the table
+    form = SQLFORM(db.users)
+
+    # if form correct perform the insert
+    if form.process().accepted:
+        username = db().select(db.users.ALL, orderby=~db.users.id)[0]
+        db.user_settings.insert(user_id=username['Username']) 
+        session.login = True
+        session.userid = username['Username']
+        session.username = username['Name']
+        redirect(URL('index'))
+    else:
+        response.flash = "Error !"        
+        
+    return dict(form=form)    
+
+def login():    
+    #TODO check whether the credentials given exist in database
+    users = db((db.users.Username==request.vars.username)&(db.users.Password==request.vars.password)).select(db.users.ALL)
+    if len(users) == 1:
+        response.flash = "successfully login"
+        session.login = True
+        session.userid = users[0]['Username']        
+        session.username = users[0]['Name']
+        redirect(URL('index'))
+    else:
+        response.flash = T("Might be some Error")
+    return dict()
+
+def logout():
+    if session.login:
+        session.login = False
+        redirect(URL('index'))
+    
+    return dict()
+
+def user():
+    """
+    exposes:
+    http://..../[app]/default/user/login 
+    http://..../[app]/default/user/logout
+    http://..../[app]/default/user/register
+    http://..../[app]/default/user/profile
+    http://..../[app]/default/user/retrieve_password
+    http://..../[app]/default/user/change_password
+    use @auth.requires_login()
+        @auth.requires_membership('group name')
+        @auth.requires_permission('read','table name',record_id)
+    to decorate functions that need access control
+    """
+    return dict(form=auth())
+
+
+def download():
+    """
+    allows downloading of uploaded files
+    http://..../[app]/default/download/[filename]
+    """
+    return response.download(request,db)
+
+
+def call():
+    """
+    exposes services. for example:
+    http://..../[app]/default/call/jsonrpc
+    decorate with @services.jsonrpc the functions to expose
+    supports xml, json, xmlrpc, jsonrpc, amfrpc, rss, csv
+    """
+    session.forget()
+    return service()

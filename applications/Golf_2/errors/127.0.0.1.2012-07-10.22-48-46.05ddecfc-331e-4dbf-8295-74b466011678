@@ -1,0 +1,457 @@
+(dp1
+S'output'
+p2
+S''
+sS'layer'
+p3
+S'/home/avinash/Documents/web2py/applications/Golf/views/default/index.html'
+p4
+sS'code'
+p5
+S'response.write(\'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\\n\\n<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">\\n  <head>\\n    <title>Web site</title>\\n    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\\n    <meta name="title" content="Web site" />\\n    <meta name="description" content="Site description here" />\\n    <meta name="keywords" content="keywords here" />\\n    <meta name="language" content="en" />\\n    <meta name="subject" content="Site subject here" />\\n    <meta name="robots" content="All" />\\n    <meta name="copyright" content="Your company" />\\n    <meta name="abstract" content="Site description here" />\\n    <meta name="MSSmartTagsPreventParsing" content="true" />\\n    <link id="theme" rel="stylesheet" type="text/css" href=\', escape=False)\nresponse.write(URL(r=request, c=\'static\' f="css/style.css"))\nresponse.write(\' title="theme" />\\n  </head>\\n  <body> \\n    <div id="wrapper"> \\n      <div id="bg"> \\n        <div id="header"></div>  \\n        <div id="page"> \\n          <div id="container"> \\n            <!-- banner -->  \\n            <div id="banner"></div>  \\n            <!-- end banner -->  \\n            <!--  content -->  \\n            <div id="content"> \\n              <div id="left"> \\n                <div id="sidebar"> \\n                  <ul class="vmenu">\\n                    <li>\\n                      <a href="#" shape="rect">Home</a>\\n                    </li>\\n                    <li>\\n                      <a href="#" shape="rect">Products</a>\\n                    </li>\\n                    <li>\\n                      <a href="#" shape="rect">Services</a>\\n                    </li>\\n                    <li>\\n                      <a href="#" shape="rect">News</a>\\n                    </li>\\n                    <li>\\n                      <a href="#" shape="rect">About us</a>\\n                    </li>\\n                    <li>\\n                      <a href="#" shape="rect">Support</a>\\n                    </li>\\n                    <li>\\n                      <a href="#" shape="rect">Testimonials</a>\\n                    </li>\\n                    <li>\\n                      <a href="#" shape="rect">Site map</a>\\n                    </li>\\n                    <li>\\n                      <a href="#" shape="rect">Contact us</a>\\n                    </li>\\n                  </ul> \\n                </div> \\n              </div>  \\n              <div id="center"> \\n                <div id="welcome"> \\n                  <h3>LICENSE</h3>  \\n                  <p>This template is free. You are free to use it, share it, redistribute it, modify it in any way you want as long as you \\n                    <strong>keep a link back to doTemplate Website</strong> in the footer. You can remove this link by making a $10 \\n                    <a href="http://www.dotemplate.com/dt/index.jsp#donate" target="_blank" shape="rect">donation</a>.\\n                  </p>  \\n                  <h1>Title 1</h1>  \\n                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>  \\n                  <div> \\n                    <img src=\', escape=False)\nresponse.write(URL(r=request,c=\'static\',f="images/flower-1.jpg"))\nresponse.write(\' style="float:right;margin:0 0 0 15px;padding:5px;border:1px solid #444" />  \\n                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p> \\n                  </div>  \\n                  <h2>Title 2</h2>  \\n                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>  \\n                  <h3>Title 3</h3>  \\n                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</p>  \\n                  <p style="clear:both" /> \\n                </div> \\n              </div>  \\n              <div style="clear:both;height:40px"></div> \\n            </div>  \\n            <!-- end content --> \\n          </div>  \\n          <!-- end container --> \\n        </div>  \\n        <div id="footerWrapper"> \\n          <div id="footer"> \\n            <p style="padding-top:10px;"> \\n              <a href="#" shape="rect">Home</a> | \\n              <a href="#" shape="rect">Products</a> | \\n              <a href="#" shape="rect">Services</a> | \\n              <a href="#" shape="rect">News</a> | \\n              <a href="#" shape="rect">About</a> \\n            </p>  \\n            <p> \\n              <!-- \\nDO NOT REMOVE OR MODIFY THE FOOTER LINK BELOW.\\nIf you want to remove this link please make a 10 dollars donation at www.dotemplate.com\\n-->  \\n              <a href="http://www.dotemplate.com" shape="rect">Templates</a> maker\\n            </p> \\n          </div> \\n        </div> \\n      </div> \\n    </div> \\n  </body>\\n</html>\\n\', escape=False)'
+p6
+sS'snapshot'
+p7
+(dp8
+S'exception'
+p9
+(dp10
+S'__getslice__'
+p11
+S"<method-wrapper '__getslice__' of exceptions.SyntaxError object>"
+p12
+sS'text'
+p13
+S'\'response.write(URL(r=request, c=\\\'static\\\' f="css/style.css"))\\n\''
+p14
+sS'__str__'
+p15
+S"<method-wrapper '__str__' of exceptions.SyntaxError object>"
+p16
+sS'__reduce__'
+p17
+S'<built-in method __reduce__ of exceptions.SyntaxError object>'
+p18
+sS'__dict__'
+p19
+S'{}'
+p20
+sS'__sizeof__'
+p21
+S'<built-in method __sizeof__ of exceptions.SyntaxError object>'
+p22
+sS'__init__'
+p23
+S"<method-wrapper '__init__' of exceptions.SyntaxError object>"
+p24
+sS'__setattr__'
+p25
+S"<method-wrapper '__setattr__' of exceptions.SyntaxError object>"
+p26
+sS'__reduce_ex__'
+p27
+S'<built-in method __reduce_ex__ of exceptions.SyntaxError object>'
+p28
+sS'__new__'
+p29
+S'<built-in method __new__ of type object>'
+p30
+sS'__format__'
+p31
+S'<built-in method __format__ of exceptions.SyntaxError object>'
+p32
+sS'__class__'
+p33
+S"<type 'exceptions.SyntaxError'>"
+p34
+sS'filename'
+p35
+S"'/home/avinash/Documents/web2py/applications/Golf/views/default/index.html'"
+p36
+sS'lineno'
+p37
+S'2'
+sS'msg'
+p38
+S"'invalid syntax'"
+p39
+sS'__doc__'
+p40
+S"'Invalid syntax.'"
+p41
+sS'__getitem__'
+p42
+S"<method-wrapper '__getitem__' of exceptions.SyntaxError object>"
+p43
+sS'__setstate__'
+p44
+S'<built-in method __setstate__ of exceptions.SyntaxError object>'
+p45
+sS'__getattribute__'
+p46
+S"<method-wrapper '__getattribute__' of exceptions.SyntaxError object>"
+p47
+sS'print_file_and_line'
+p48
+S'None'
+p49
+sS'args'
+p50
+S'(\'invalid syntax\', (\'/home/avinash/Documents/web2py/applications/Golf/views/default/index.html\', 2, 42, \'response.write(URL(r=request, c=\\\'static\\\' f="css/style.css"))\\n\'))'
+p51
+sS'__subclasshook__'
+p52
+S'<built-in method __subclasshook__ of type object>'
+p53
+sS'offset'
+p54
+S'42'
+p55
+sS'__unicode__'
+p56
+S'<built-in method __unicode__ of exceptions.SyntaxError object>'
+p57
+sS'__delattr__'
+p58
+S"<method-wrapper '__delattr__' of exceptions.SyntaxError object>"
+p59
+sS'__repr__'
+p60
+S"<method-wrapper '__repr__' of exceptions.SyntaxError object>"
+p61
+sS'__hash__'
+p62
+S"<method-wrapper '__hash__' of exceptions.SyntaxError object>"
+p63
+ssS'evalue'
+p64
+S'invalid syntax (index.html, line 2)'
+p65
+sS'request'
+p66
+(dp67
+S'function'
+p68
+S"'index'"
+p69
+sS'body'
+p70
+S'<cStringIO.StringO object>'
+p71
+sS'wsgi'
+p72
+S"<Storage {'start_response': <function <lambda> a...>, 'HTTP_ACCEPT_ENCODING': 'gzip,deflate,sdch'}}>"
+p73
+sS'extension'
+p74
+S"'html'"
+p75
+sS'vars'
+p76
+S'<Storage {}>'
+p77
+sS'cid'
+p78
+S'None'
+p79
+sS'url'
+p80
+S'<gluon.html.XML object>'
+p81
+sg50
+S'[]'
+p82
+sS'controller'
+p83
+S"'default'"
+p84
+sS'cookies'
+p85
+S"<SimpleCookie: session_id_Robocamp2='127.0.0.1-d...'127.0.0.1-3afa3a09-8b2d-4e5e-99bb-66821acde887'>"
+p86
+sS'application'
+p87
+S"'Golf'"
+p88
+sS'ajax'
+p89
+S'False'
+p90
+sS'client'
+p91
+S"'127.0.0.1'"
+p92
+sS'env'
+p93
+S"<Storage {'wsgi_multithread': True, 'http_accept...nput': <socket._fileobject object at 0xa624e2c>}>"
+p94
+sS'raw_args'
+p95
+S'None'
+p96
+sS'get_vars'
+p97
+S'<Storage {}>'
+p98
+sS'folder'
+p99
+S"'/home/avinash/Documents/web2py/applications/Golf/'"
+p100
+sS'now'
+p101
+S'datetime.datetime(2012, 7, 10, 22, 48, 46, 588259)'
+p102
+sS'post_vars'
+p103
+S'<Storage {}>'
+p104
+ssS'frames'
+p105
+(lp106
+(dp107
+S'file'
+p108
+S'/home/avinash/Documents/web2py/gluon/restricted.py'
+p109
+sS'dump'
+p110
+(dp111
+S'code'
+p112
+S'\'response.write(\\\'<!DOCTYPE html PUBLIC "-//W3C//D...    </div> \\\\n  </body>\\\\n</html>\\\\n\\\', escape=False)\''
+p113
+sS'layer'
+p114
+S"'/home/avinash/Documents/web2py/applications/Golf/views/default/index.html'"
+p115
+sS'global compile2'
+p116
+S'<function compile2>'
+p117
+sS'ccode'
+p118
+S'undefined'
+p119
+ssS'lnum'
+p120
+I186
+sS'lines'
+p121
+(dp122
+I181
+S''
+sI182
+S'    try:'
+p123
+sI183
+S'        if type(code) == types.CodeType:'
+p124
+sI184
+S'            ccode = code'
+p125
+sI185
+S'        else:'
+p126
+sI186
+S'            ccode = compile2(code,layer)'
+p127
+sI187
+S''
+sI188
+S'        exec ccode in environment'
+p128
+sI189
+S'    except HTTP:'
+p129
+sI190
+S'        raise'
+p130
+ssS'call'
+p131
+S'(code=\'response.write(\\\'<!DOCTYPE html PUBLIC "-//W3C//D...    </div> \\\\n  </body>\\\\n</html>\\\\n\\\', escape=False)\', environment={\'A\': <class \'gluon.html.A\'>, \'Auth\': <class \'gluon.tools.Auth\'>, \'B\': <class \'gluon.html.B\'>, \'BEAUTIFY\': <class \'gluon.html.BEAUTIFY\'>, \'BODY\': <class \'gluon.html.BODY\'>, \'BR\': <class \'gluon.html.BR\'>, \'CENTER\': <class \'gluon.html.CENTER\'>, \'CLEANUP\': <class \'gluon.validators.CLEANUP\'>, \'CODE\': <class \'gluon.html.CODE\'>, \'CRYPT\': <class \'gluon.validators.CRYPT\'>, ...}, layer=\'/home/avinash/Documents/web2py/applications/Golf/views/default/index.html\')'
+p132
+sS'func'
+p133
+S'restricted'
+p134
+sa(dp135
+g108
+S'/home/avinash/Documents/web2py/gluon/restricted.py'
+p136
+sg110
+(dp137
+S'builtincompile'
+p138
+S'<built-in function compile>'
+p139
+sS'code'
+p140
+S'\'response.write(\\\'<!DOCTYPE html PUBLIC "-//W3C//D...    </div> \\\\n  </body>\\\\n</html>\\\\n\\\', escape=False)\''
+p141
+sS'code.rstrip'
+p142
+S'<built-in method rstrip of str object>'
+p143
+sS').replace'
+p144
+g119
+sS'layer'
+p145
+S"'/home/avinash/Documents/web2py/applications/Golf/views/default/index.html'"
+p146
+ssg120
+I173
+sg121
+(dp147
+I168
+S''
+sI169
+S'def compile2(code,layer):'
+p148
+sI170
+S'    """'
+p149
+sI171
+S"    The +'\\n' is necessary else compile fails when code ends in a comment."
+p150
+sI172
+S'    """'
+p151
+sI173
+S"    return compile(code.rstrip().replace('\\r\\n','\\n')+'\\n', layer, 'exec')"
+p152
+sI174
+S''
+sI175
+S"def restricted(code, environment={}, layer='Unknown'):"
+p153
+sI176
+S'    """'
+p154
+sI177
+S'    runs code in environment and returns the output. if an exception occurs'
+p155
+ssg131
+S'(code=\'response.write(\\\'<!DOCTYPE html PUBLIC "-//W3C//D...    </div> \\\\n  </body>\\\\n</html>\\\\n\\\', escape=False)\', layer=\'/home/avinash/Documents/web2py/applications/Golf/views/default/index.html\')'
+p156
+sg133
+S'compile2'
+p157
+sasS'pyver'
+p158
+S'Python 2.6.6: /usr/bin/python'
+p159
+sS'session'
+p160
+(dp161
+S'auth'
+p162
+S'None'
+p163
+ssS'etype'
+p164
+S"<type 'exceptions.SyntaxError'>"
+p165
+sS'date'
+p166
+S'Tue Jul 10 22:48:46 2012'
+p167
+sS'response'
+p168
+(dp169
+S'status'
+p170
+S'200'
+p171
+sg70
+S'<cStringIO.StringO object>'
+p172
+sg85
+S"<SimpleCookie: session_id_Golf='127.0.0.1-3f2bed10-105e-414a-aa9c-c26568fb35cb'>"
+p173
+sS'_vars'
+p174
+S"{'message': <lazyT 'Hello World'>}"
+p175
+sS'title'
+p176
+S"'Golf'"
+p177
+sS'menu'
+p178
+S"[(<lazyT 'Home'>, False, <gluon.html.XML object>, []), (<lazyT 'This App'>, False, <gluon.html.XML object>, [(<lazyT 'Controller'>, False, <gluon.html.XML object>), (<lazyT 'View'>, False, <gluon.html.XML object>), (<lazyT 'Layout'>, False, <gluon.html.XML object>), (<lazyT 'Stylesheet'>, False, <gluon.html.XML object>), (<lazyT 'DB Model'>, False, <gluon.html.XML object>), (<lazyT 'Menu Model'>, False, <gluon.html.XML object>), (<lazyT 'Database'>, False, <gluon.html.XML object>), (<lazyT 'Errors'>, False, <gluon.html.XML object>), (<lazyT 'About'>, False, <gluon.html.XML object>)]), (<lazyT 'Resources'>, False, None, [(<lazyT 'Documentation'>, False, 'http://www.web2py.com/book', [(<lazyT 'Preface'>, False, 'http://www.web2py.com/book/default/chapter/00'), (<lazyT 'Introduction'>, False, 'http://www.web2py.com/book/default/chapter/01'), (<lazyT 'Python'>, False, 'http://www.web2py.com/book/default/chapter/02'), (<lazyT 'Overview'>, False, 'http://www.web2py.com/book/default/chapter/03'), (<lazyT 'The Core'>, False, 'http://www.web2py.com/book/default/chapter/04'), (<lazyT 'The Views'>, False, 'http://www.web2py.com/book/default/chapter/05'), (<lazyT 'Database'>, False, 'http://www.web2py.com/book/default/chapter/06'), (<lazyT 'Forms and Validators'>, False, 'http://www.web2py.com/book/default/chapter/07'), (<lazyT 'Access Control'>, False, 'http://www.web2py.com/book/default/chapter/08'), (<lazyT 'Services'>, False, 'http://www.web2py.com/book/default/chapter/09'), (<lazyT 'Ajax Recipes'>, False, 'http://www.web2py.com/book/default/chapter/10'), (<lazyT 'Deployment Recipes'>, False, 'http://www.web2py.com/book/default/chapter/11'), (<lazyT 'Other Recipes'>, False, 'http://www.web2py.com/book/default/chapter/12'), (<lazyT 'Buy this book'>, False, 'http://stores.lulu.com/web2py')]), (<lazyT 'Community'>, False, None, [(<lazyT 'Groups'>, False, 'http://www.web2py.com/examples/default/usergroups'), (<lazyT 'Twitter'>, False, 'http://twitter.com/web2py'), (<lazyT 'Live chat'>, False, 'http://mibbit.com/?channel=%23web2py&server=irc.mibbit.net'), (<lazyT 'User Voice'>, False, 'http://web2py.uservoice.com/')]), (<lazyT 'Web2py'>, False, 'http://www.web2py.com', [(<lazyT 'Download'>, False, 'http://www.web2py.com/examples/default/download'), (<lazyT 'Support'>, False, 'http://www.web2py.com/examples/default/support'), (<lazyT 'Quick Examples'>, False, 'http://web2py.com/examples/default/examples'), (<lazyT 'FAQ'>, False, 'http://web2py.com/AlterEgo'), (<lazyT 'Free Applications'>, False, 'http://web2py.com/appliances'), (<lazyT 'Plugins'>, False, 'http://web2py.com/plugins'), (<lazyT 'Recipes'>, False, 'http://web2pyslices.com/'), (<lazyT 'Demo'>, False, 'http://web2py.com/demo_admin'), (<lazyT 'Semantic'>, False, 'http://web2py.com/semantic'), (<lazyT 'Layouts'>, False, 'http://web2py.com/layouts'), (<lazyT 'Videos'>, False, 'http://www.web2py.com/examples/default/videos/')])])]"
+p179
+sS'flash'
+p180
+S"<lazyT 'You are successfully running web2py.'>"
+p181
+sS'session_new'
+p182
+S'True'
+p183
+sS'_custom_rollback'
+p184
+S'None'
+p185
+sS'session_id'
+p186
+S"'127.0.0.1-3f2bed10-105e-414a-aa9c-c26568fb35cb'"
+p187
+sS'headers'
+p188
+S"<Storage {'Expires': 'Tue, 10 Jul 2012 17:18:46 ...he, must-revalidate, post-check=0, pre-check=0'}>"
+p189
+sS'meta'
+p190
+S"<Storage {'keywords': 'web2py, python, framework... 'Web2py Enterprise Framework', 'author': 'you'}>"
+p191
+sS'session_filename'
+p192
+S"'/home/avinash/Documents/web2py/applications/Golf...ns/127.0.0.1-3f2bed10-105e-414a-aa9c-c26568fb35cb'"
+p193
+sS'postprocessing'
+p194
+S'[]'
+p195
+sS'_caller'
+p196
+S'<function <lambda>>'
+p197
+sS'_view_environment'
+p198
+S"{'A': <class 'gluon.html.A'>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'CENTER': <class 'gluon.html.CENTER'>, 'CLEANUP': <class 'gluon.validators.CLEANUP'>, 'CODE': <class 'gluon.html.CODE'>, 'CRYPT': <class 'gluon.validators.CRYPT'>, ...}"
+p199
+sS'subtitle'
+p200
+S"<lazyT 'customize me!'>"
+p201
+sS'session_id_name'
+p202
+S"'session_id_Golf'"
+p203
+sS'_custom_commit'
+p204
+S'None'
+p205
+sS'files'
+p206
+S'[]'
+p207
+sS'view'
+p208
+S"'default/index.html'"
+p209
+ssS'locals'
+p210
+(dp211
+g3
+S"'/home/avinash/Documents/web2py/applications/Golf/views/default/index.html'"
+p212
+sg5
+S'\'response.write(\\\'<!DOCTYPE html PUBLIC "-//W3C//D...    </div> \\\\n  </body>\\\\n</html>\\\\n\\\', escape=False)\''
+p213
+sssS'traceback'
+p214
+S'Traceback (most recent call last):\n  File "/home/avinash/Documents/web2py/gluon/restricted.py", line 186, in restricted\n    ccode = compile2(code,layer)\n  File "/home/avinash/Documents/web2py/gluon/restricted.py", line 173, in compile2\n    return compile(code.rstrip().replace(\'\\r\\n\',\'\\n\')+\'\\n\', layer, \'exec\')\n  File "/home/avinash/Documents/web2py/applications/Golf/views/default/index.html", line 2\n    response.write(URL(r=request, c=\'static\' f="css/style.css"))\n                                             ^\nSyntaxError: invalid syntax\n'
+p215
+s.
